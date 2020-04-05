@@ -1,0 +1,308 @@
+.center {text-align: center;}
+.bold {font-weight: bold;}
+.fix-bottom {position: fixed; bottom: 0; left: 0; width: 100%;}
+.text-container {margin: 1em; line-height: 1.1em;}
+.row {margin: 0 1em;}
+.no-decoration:hover {text-decoration: none;}
+.margin05top {margin-top: .5em;}
+.margin1top {margin-top: 1em;}
+.margin2top {margin-top: 2em;}
+
+body {
+    background-color: lightgoldenrodyellow;
+    overflow-x: hidden;
+}
+
+body p {margin-top: 1em;}
+
+main {
+    margin-bottom: 100px; /* height of footer*/
+}
+
+#profile-photo {
+    max-width: 70%;
+    margin: 1em auto;
+    border-radius: 50%;
+    border: 5px solid cadetblue;
+}
+
+#greeting {
+    font-size: 5em;
+    margin-top: 0;
+    line-height: .5em;
+}
+
+.intro-text {
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.custom-btn, .custom-btn:hover {
+    background-color: cadetblue;
+    color: lightgoldenrodyellow !important;
+    margin: .5em;
+    border: 2px solid cadetblue;
+}
+
+.custom-btn-reverse, .custom-btn-reverse:hover {
+    background-color: lightgoldenrodyellow;
+    color:  cadetblue !important;
+    margin: .5em;
+    border: 2px solid cadetblue;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background-color: cadetblue;
+    color: lightgoldenrodyellow;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    background-color: cadetblue;
+    color: lightgoldenrodyellow;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#sidebar-wrapper .list-group-item {
+    background-color: cadetblue;
+    color: lightgoldenrodyellow;
+}
+
+#sidebar-wrapper .list-group-item:hover {
+    background-color: lightgoldenrodyellow;
+    color: cadetblue;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+  
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+}
+
+
+/* Footer */
+#foot{
+    background-color: cadetblue;
+    color: lightgoldenrodyellow;
+}
+
+#foot p {
+    margin: 1em 0;
+}
+
+#social a {
+    margin: 0 1em;
+    color: lightgoldenrodyellow;
+}
+
+/* About section */
+#about {
+    font-size: 1.5em;
+}
+
+
+/* formation section */
+.courses {
+    margin-bottom: 6em;
+}
+
+.course {
+    position: relative;
+    margin-top: 4em;
+}
+
+.course .title {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0;
+    border-radius: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid cadetblue;
+}
+
+.course .ribbon{
+	width: 100px;
+	height: 150px;
+	background-color: cadetblue;
+	position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    z-index: -3;
+}
+
+.course .ribbon:before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: -50px;
+    border-left: 50px solid cadetblue;
+    border-right: 50px solid cadetblue;
+    border-bottom: 50px solid transparent;
+}
+
+
+.course img {
+    border-radius: 50%;
+    max-width: 100%;
+    cursor: pointer;
+    border: 5px solid cadetblue;
+}
+
+.course a {
+    color: cadetblue;
+}
+
+.other_courses_wrapper {
+    margin-top: 1em;
+}
+
+.other_courses_wrapper img {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.other_courses_wrapper .title {
+    display: inline-block;
+    margin: 0;
+    padding-left: 0;
+}
+
+.other_courses_wrapper .title a{
+    color: cadetblue;
+    text-decoration: none;
+}
+
+@media (min-width: 560px) {
+    .course {
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 1600px) {
+    .courses {
+        margin-bottom: 5em;
+    }
+    
+    .course .ribbon{
+        width: 50px;
+        height: 75px;
+    }
+
+    .course .ribbon:before{
+        bottom: -25px;
+        border-left: 25px solid cadetblue;
+        border-right: 25px solid cadetblue;
+        border-bottom: 25px solid transparent;
+    }
+}
+
+
+/* Portfolio */
+.work {
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    border: 2px solid cadetblue;
+    border-radius: 35px;
+    margin-bottom: 1em;
+}
+
+.work .image-container{
+    position: relative;
+}
+
+.work .image-container .fade_ {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    opacity: 0.7;
+}
+
+.work .image-container .fade-content {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    flex-direction: column;
+}
+
+.work .image-container .fade-content p{
+    padding: 0 .5em 0 .5em;
+}
+
+.work .image-container img {
+    max-width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.close {
+    color: cadetblue;
+}
+
+.modal-header {
+    border-bottom: 1px solid cadetblue;
+}
+
+.modal-content {
+    border: 1px solid cadetblue;
+}
+
+.modal-content * {
+    max-width: 100%;;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 1000px;       
+    }
+}
